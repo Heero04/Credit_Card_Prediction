@@ -8,6 +8,6 @@ import requests
 streamlit.title('Credit Card Prediction')
 
 
-streamlit.selectbox('DO YOU OWN A PROPERTY',("N","Y"))
+option = streamlit.selectbox('DO YOU OWN A PROPERTY',("N","Y"))
 
 streamlit.write('You selected:', option)
