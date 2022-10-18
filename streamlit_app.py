@@ -5,7 +5,7 @@ import requests
 # this is the main function in which we define our webpage 
 
 
-streamlit.title('TEST 2')
+streamlit.title('Credit Card Prediction')
 
 option = streamlit.selectbox(
     'How would you like to be contacted?',
