@@ -1,11 +1,11 @@
 import streamlit
 import pandas
 import requests
-from urllib.error import URLError
 
-##streamlit.title('TEST 2')
 
-option = st.selectbox(
+streamlit.title('TEST 2')
+
+st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
