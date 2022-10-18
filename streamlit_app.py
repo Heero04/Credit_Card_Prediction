@@ -11,6 +11,6 @@ option = streamlit.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
-streamlit.selectbox('OWN_A_PROPERTY',("N","Y"))
+streamlit.selectbox('Do you own a property',("N","Y"))
 
 streamlit.write('You selected:', option)
