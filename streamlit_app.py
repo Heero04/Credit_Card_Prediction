@@ -5,8 +5,8 @@ import requests
 
 streamlit.title('TEST 2')
 
-st.selectbox(
+streamlit.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
-st.write('You selected:', option)
+streamlit.write('You selected:', option)
