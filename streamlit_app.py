@@ -2,7 +2,7 @@ import streamlit
 import pandas
 import requests
 
-# this is the main function in which we define our webpage 
+# Testing Streamlit
 
 
 streamlit.title('Credit Card Prediction')
