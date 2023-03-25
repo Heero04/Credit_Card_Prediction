@@ -64,8 +64,7 @@ def prediction(OWN_A_PROPERTY, INCOME, MARITAL_STATUS, TYPE_OF_HOUSING):
  
   
     # Making predictions 
-    prediction = classifier.predict( 
-        [[Gender, Married, ApplicantIncome, LoanAmount, Credit_History]])
+  prediction = classifier.predict([[OWN_A_PROPERTY, INCOME, MARITAL_STATUS, TYPE_OF_HOUSING]])
      
     if prediction == 0:
         pred = 'Rejected'
@@ -93,6 +92,6 @@ def main():
     result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
-    if st.button("Predict"): 
-        result = prediction(OWN_A_PROPERTY, INCOME, MARITAL_STATUS, TYPE_OF_HOUSING) 
-        st.success('You are Approved')
+   if st.button("Predict"): 
+    result = prediction(OWN_A_PROPERTY, INCOME, MARITAL_STATUS, TYPE_OF_HOUSING) 
+    st.success(f'Your loan application is {result}')
